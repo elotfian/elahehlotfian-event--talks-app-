@@ -1,3 +1,5 @@
-# Exclude CSS and JS from language statistics so GitHub correctly identifies this as a Python (Flask) project
-static/css/style.css linguist-vendored
-static/js/app.js linguist-vendored
+# Force GitHub to show Python as primary language by excluding all other types
+*.css linguist-detectable=false
+*.js linguist-detectable=false
+*.html linguist-detectable=false
+*.md linguist-detectable=false
